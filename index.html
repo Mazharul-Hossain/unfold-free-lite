@@ -6,8 +6,12 @@
     <!--====== Required meta tags ======-->
     <meta charset="utf-8">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <meta content="" name="description">
+
+    <meta content="mazharul hossain" name="description">
+    <meta content="mazhar" name="description">
+
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta name="theme-color" content="#a945db">
 
     <!--====== Title ======-->
     <title>Mazharul Hossain | Unfold</title>
@@ -16,10 +20,12 @@
     <link href="assets/images/favicon.png" rel="shortcut icon" type="image/png">
 
     <!--====== Bootstrap css ======-->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- link href="assets/css/bootstrap.min.css" rel="stylesheet" -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!--====== Line Icons css ======-->
-    <link href="assets/css/LineIcons.css" rel="stylesheet">
+    <link rel="preload" href="assets/css/LineIcons.css" as="style" onload="this.rel='stylesheet'">
+    <!-- link async href="assets/css/LineIcons.css" rel="stylesheet" -->
 
     <!--====== Magnific Popup css ======-->
     <link href="assets/css/magnific-popup.css" rel="stylesheet">
@@ -151,11 +157,11 @@
                     <div class="col-lg-12">
                         <div class="header-social-icon">
                             <ul>
-                                <li><a href="https://stackoverflow.com/story/mazharul-hossain" target="_blank"><i
+                                <li><a href="https://stackoverflow.com/story/mazharul-hossain" target="_blank" rel="noopener noreferrer"><i
                                         class="lni-stackoverflow"></i></a></li>
-                                <li><a href="https://github.com/Mazharul-Hossain/" target="_blank"><i
+                                <li><a href="https://github.com/Mazharul-Hossain/" target="_blank" rel="noopener noreferrer"><i
                                         class="lni-github-original"></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/hossainmazhar" target="_blank"><i
+                                <li><a href="https://www.linkedin.com/in/hossainmazhar" target="_blank" rel="noopener noreferrer"><i
                                         class="lni-linkedin-original"></i></a></li>
                             </ul>
                         </div> <!-- header social -->
@@ -194,16 +200,16 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="footer-content text-center">
-                        <a href="index.html">
+                        <a href="/">
                             <img alt="Logo" src="assets/images/logo-2.png">
                         </a>
                         <p class="mt-"> </p>
                         <ul>
-                            <li><a href="https://stackoverflow.com/story/mazharul-hossain" target="_blank"><i
+                            <li><a href="https://stackoverflow.com/story/mazharul-hossain" target="_blank" rel="noopener noreferrer"><i
                                     class="lni-stackoverflow"></i></a></li>
-                            <li><a href="https://github.com/Mazharul-Hossain/" target="_blank"><i
+                            <li><a href="https://github.com/Mazharul-Hossain/" target="_blank rel="noopener noreferrer"><i
                                     class="lni-github-original"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/hossainmazhar" target="_blank"><i
+                            <li><a href="https://www.linkedin.com/in/hossainmazhar" target="_blank" rel="noopener noreferrer"><i
                                     class="lni-linkedin-original"></i></a></li>
                         </ul>
                     </div> <!-- footer content -->
@@ -216,7 +222,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="copyright-text text-center pt-20">
-                        <p>Copyright © 2022. Template Crafted by <a href="https://uideck.com" target="_blank" rel="nofollow">UIdeck</a>
+                        <p>Copyright © 2022. Template Crafted by <a href="https://uideck.com" target="_blank" rel="nofollow noopener noreferrer">UIdeck</a>
                         </p>
                     </div> <!-- copyright text -->
                 </div>
@@ -235,36 +241,39 @@
 
 
 <!--====== jquery js ======-->
-<script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
-<script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-
-<!--====== Bootstrap js ======-->
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/popper.min.js"></script>
-
-<!--====== Magnific Popup js ======-->
-<script src="assets/js/jquery.magnific-popup.min.js"></script>
-
-<!--====== Parallax js ======-->
-<script src="assets/js/parallax.min.js"></script>
-
-<!--====== Counter Up js ======-->
-<script src="assets/js/waypoints.min.js"></script>
-<script src="assets/js/jquery.counterup.min.js"></script>
-
-
-<!--====== Appear js ======-->
-<script src="assets/js/jquery.appear.min.js"></script>
-
-<!--====== Scrolling js ======-->
-<script src="assets/js/scrolling-nav.js"></script>
-<script src="assets/js/jquery.easing.min.js"></script>
+<script defer src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+<script defer src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
 <!--====== Angular js ======-->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
 
+<!--====== Bootstrap js ======-->
+<!--script defer src="assets/js/bootstrap.min.js"></script>
+<script defer src="assets/js/popper.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script -->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!--====== Magnific Popup js ======-->
+<script defer src="assets/js/jquery.magnific-popup.min.js"></script>
+
+<!--====== Parallax js ======-->
+<script defer src="assets/js/parallax.min.js"></script>
+
+<!--====== Counter Up js ======-->
+<script defer src="assets/js/waypoints.min.js"></script>
+<script defer src="assets/js/jquery.counterup.min.js"></script>
+
+
+<!--====== Appear js ======-->
+<script defer src="assets/js/jquery.appear.min.js"></script>
+
+<!--====== Scrolling js ======-->
+<script defer src="assets/js/scrolling-nav.js"></script>
+<script defer src="assets/js/jquery.easing.min.js"></script>
+
 <!--====== Main js ======-->
-<script src="assets/js/main.js"></script>
+<script defer src="assets/js/main.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137233059-3"></script>
