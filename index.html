@@ -39,7 +39,7 @@
 
 </head>
 
-<body>
+<body ng-app="">
 
 <!--====== PRELOADER PART START ======-->
 
@@ -167,301 +167,22 @@
 </header>
 
 <!--====== HEADER PART ENDS ======-->
-
+<!-- ===== https://stackoverflow.com/a/35478468 ====== -->
 <!--====== ABOUT PART START ======-->
 
-<section class="about-area pt-125 pb-130" id="about">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="section-title text-center">
-                    <h2 class="title">About Me</h2>
-                    <p>.</p>
-                </div> <!-- section title -->
-            </div>
-        </div> <!-- row -->
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="about-content mt-50">
-                    <h5 class="about-title">Hi There! I'm Mazharul Hossain</h5>
-                    <p>This is my personal/resume website. <b style="color: red;">Under construction, Feel free to look, but remember "not final"</b></p>
-                    <ul class="clearfix">
-                        <li>
-                            <div class="single-info d-flex align-items-center">
-                                <div class="info-icon">
-                                    <i class="lni-calendar"></i>
-                                </div>
-                                <div class="info-text">
-                                    <p><span>Job Status:</span> Interested for Summer 2020 Intern and Independent Projects</p>
-                                </div>
-                            </div> <!-- single info -->
-                        </li>
-                        <li>
-                            <div class="single-info d-flex align-items-center">
-                                <div class="info-icon">
-                                    <i class="lni-envelope"></i>
-                                </div>
-                                <div class="info-text">
-                                    <p><span>Email:</span> <a href="mailto:hossain.mazharul@gmail.com">hossain.mazharul@gmail.com</a>
-                                    </p>
-                                </div>
-                            </div> <!-- single info -->
-                        </li>
-                    </ul>
-                </div> <!-- about content -->
-            </div>
-            <div class="col-xl-5 offset-xl-1 col-lg-6">
-                <div class="about-skills pt-25">
-                    <div class="skill-item mt-25">
-                        <div class="skill-header">
-                            <h6 class="skill-title">Front End Development: HTML, CSS, JS</h6>
-                            <div class="skill-percentage">
-                                <div class="count-box counted">
-                                    <span class="counter">60</span>
-                                </div>
-                                %
-                            </div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="bar-inner">
-                                <div class="bar progress-line" data-width="60"></div>
-                            </div>
-                        </div>
-                    </div> <!-- skill item -->
-                    <div class="skill-item mt-25">
-                        <div class="skill-header">
-                            <h6 class="skill-title">Back End Development: PHP, DJANGO, ASP.NET</h6>
-                            <div class="skill-percentage">
-                                <div class="count-box counted">
-                                    <span class="counter">80</span>
-                                </div>
-                                %
-                            </div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="bar-inner">
-                                <div class="bar progress-line" data-width="80"></div>
-                            </div>
-                        </div>
-                    </div> <!-- skill item -->
-                    <div class="skill-item mt-25">
-                        <div class="skill-header">
-                            <h6 class="skill-title">Python, TensorFlow</h6>
-                            <div class="skill-percentage">
-                                <div class="count-box counted">
-                                    <span class="counter">50</span>
-                                </div>
-                                %
-                            </div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="bar-inner">
-                                <div class="bar progress-line" data-width="50"></div>
-                            </div>
-                        </div>
-                    </div> <!-- skill item -->
-                </div> <!-- about skills -->
-            </div>
-        </div> <!-- row -->
-    </div> <!-- container -->
-</section>
+<div ng-include="'about.html'"></div>
 
 <!--====== ABOUT PART ENDS ======-->
 
 <!--====== SERVICES PART START ======-->
 
-<section class="services-area gray-bg pt-125 pb-130" id="service">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="section-title text-center pb-30">
-                    <h2 class="title">My Expertise</h2>
-                    <p>.</p>
-                </div> <!-- section title -->
-            </div>
-        </div> <!-- row -->
-        <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6 col-sm-8">
-                <div class="single-service text-center mt-30">
-                    <div class="service-icon">
-                        <i class="lni-code-alt"></i>
-                    </div>
-                    <div class="service-content">
-                        <h4 class="service-title"><a href="#">AI, ML and Deep Learning</a></h4>
-                        <p>.</p>
-                    </div>
-                </div> <!-- single service -->
-            </div>            
-            <div class="col-lg-4 col-md-6 col-sm-8">
-                <div class="single-service text-center mt-30">
-                    <div class="service-icon">
-                        <i class="lni-website"></i>
-                    </div>
-                    <div class="service-content">
-                        <h4 class="service-title"><a href="#">Web Development</a></h4>
-                        <p> PHP, PYTHON</p>
-                    </div>
-                </div> <!-- single service -->
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-8">
-                <div class="single-service text-center mt-30">
-                    <div class="service-icon">
-                    <i class="lni-support"></i>
-                    </div>
-                    <div class="service-content">
-                    <h4 class="service-title"><a href="#">Data Analyst and Consultancy</a></h4>
-                    <p>.</p>
-                    </div>
-                    </div> <!-- single service -->
-            </div>
-            
-        </div> <!-- row -->
-    </div> <!-- container -->
-</section>
+<div ng-include="'services.html'"></div>
 
 <!--====== SERVICES PART ENDS ======-->
 
-<!--====== CALL TO ACTION PART START ======-->
-
-<section class="call-to-action pt-125 pb-130 bg_cover" id="call-to-action"
-         style="background-image: url(assets/images/call-to-action.jpg)">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-xl-8 col-lg-9">
-                <div class="call-action-content text-center">
-                    <h2 class="action-title">Have any project on mind?</h2>
-                    <p>Interested to hire me? Any product idea in mind or need software solution.</p>
-                    <ul>
-                        <li><a class="main-btn custom" href="mailto:hossain.mazharul@gmail.com?subject=Request for CV, Contacting from your CV Site">request cv</a></li>
-                        <li><a class="main-btn custom-2" href="mailto:hossain.mazharul@gmail.com?subject=Interested to hire you, Contacting from your CV Site">hire me</a></li>
-                    </ul>
-                </div> <!-- call action content -->
-            </div>
-        </div> <!-- row -->
-    </div> <!-- container -->
-</section>
-
-<!--====== CALL TO ACTION PART ENDS ======-->
-
-<!--====== WORK PART START ======-->
-
-<section class="work-area pt-125 pb-130" id="work">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8">
-                <div class="section-title pb-25">
-                    <h2 class="title">My Recent Projects</h2>
-                    <p></p>
-                </div> <!-- section title -->
-            </div>
-        </div> <!-- row -->
-        <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="single-work text-center mt-30">
-                    <div class="work-image">
-                        <img alt="work" src="assets/images/work/w-1.jpg">
-                    </div>
-                    <div class="work-overlay">
-                        <div class="work-content">
-                            <h3 class="work-title">Product Design</h3>
-                            <ul>
-                                <li><a class="image-popup" href="assets/images/work/w-1.jpg"><i
-                                        class="lni-plus"></i></a></li>
-                                <li><a href="#"><i class="lni-link"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> <!-- single work -->
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="single-work text-center mt-30">
-                    <div class="work-image">
-                        <img alt="work" src="assets/images/work/w-1.jpg">
-                    </div>
-                    <div class="work-overlay">
-                        <div class="work-content">
-                            <h3 class="work-title">Product Design</h3>
-                            <ul>
-                                <li><a class="image-popup" href="assets/images/work/w-1.jpg"><i
-                                        class="lni-plus"></i></a></li>
-                                <li><a href="#"><i class="lni-link"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> <!-- single work -->
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="single-work text-center mt-30">
-                    <div class="work-image">
-                        <img alt="work" src="assets/images/work/w-1.jpg">
-                    </div>
-                    <div class="work-overlay">
-                        <div class="work-content">
-                            <h3 class="work-title">Product Design</h3>
-                            <ul>
-                                <li><a class="image-popup" href="assets/images/work/w-1.jpg"><i
-                                        class="lni-plus"></i></a></li>
-                                <li><a href="#"><i class="lni-link"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> <!-- single work -->
-            </div>
-        </div> <!-- row -->
-    </div> <!-- container -->
-</section>
-
-<!--====== WORK PART ENDS ======-->
-
 <!--====== CONTACT PART START ======-->
 
-<section class="contact-area pt-125 pb-130 gray-bg" id="contact">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="section-title text-center pb-25">
-                    <h2 class="title">Get In Touch</h2>
-                    <p>Please contact me through my email.</p>
-                </div> <!-- section title -->
-            </div>
-        </div> <!-- row -->
-        <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6 col-sm-7">
-                <div class="contact-box text-center mt-30">
-                    <div class="contact-icon">
-                        <i class="lni-map-marker"></i>
-                    </div>
-                    <div class="contact-content">
-                        <h6 class="contact-title">Address</h6>
-                        <p></p>
-                    </div>
-                </div> <!-- contact box -->
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-7">
-                <div class="contact-box text-center mt-30">
-                    <div class="contact-icon">
-                        <i class="lni-phone"></i>
-                    </div>
-                    <div class="contact-content">
-                        <h6 class="contact-title">Phone</h6>
-                        <p></p>
-                    </div>
-                </div> <!-- contact box -->
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-7">
-                <div class="contact-box text-center mt-30">
-                    <div class="contact-icon">
-                        <i class="lni-envelope"></i>
-                    </div>
-                    <div class="contact-content">
-                        <h6 class="contact-title">Email</h6>
-                        <p>hossain.mazharul@gmail.com</p>
-                    </div>
-                </div> <!-- contact box -->
-            </div>
-        </div> <!-- row -->
-    </div> <!-- container -->
-</section>
+<div ng-include="'contact.html'"></div>
 
 <!--====== CONTACT PART ENDS ======-->
 
@@ -539,6 +260,8 @@
 <script src="assets/js/scrolling-nav.js"></script>
 <script src="assets/js/jquery.easing.min.js"></script>
 
+<!--====== Angular js ======-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
 
 <!--====== Main js ======-->
 <script src="assets/js/main.js"></script>
